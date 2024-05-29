@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.scroll {
+  overflow: scroll;
+  overflow-y: hidden;
+  display: flex;
+  /* max-width: 100%; */
+  width: 100%;
+}
+.subtitle {
+  margin-top: 2px;
+  color: #454d56;
+}
+.title {
+  color: #00368f;
+  margin-bottom: 1px !important;
+}
+
+.card {
+  /* margin: 0px 10px; */
+  padding: 20px 30px 20px 0px;
+}
+.bigCard {
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 14px 0px #000000;
+  box-shadow: 0px 0px 10px 0px #0000006b;
+  max-width: 50vw;
+}
+
+.lineTotal {
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  color: #2f6dd5;
+  font-size: 22px;
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f2f6fc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d9e4f7;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #acb4c3;
+}

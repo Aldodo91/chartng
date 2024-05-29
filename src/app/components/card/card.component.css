@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.detail-card {
+  padding: 0px 16px;
+  /* border-radius: 4px; */
+  /* border: 1px solid red; */
+  height: 70px;
+  width: 100px;
+  white-space: nowrap;
+  overflow: visible;
+  /* background-color: sandybrown; */
+}
+
+.valore {
+  /* padding-top: 6px; */
+  font-size: 32px;
+  font-weight: 700;
+  color: #454d56;
+}
+.label {
+  font-size: small;
+  font-weight: 500;
+  /* padding-bottom: 8px; */
+  color: #454d56;
+}

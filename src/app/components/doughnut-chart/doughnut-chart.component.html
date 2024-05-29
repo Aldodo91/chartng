@@ -1,0 +1,44 @@
+<div class="bigCard">
+  <div class="row">
+    <div>
+      <h3 class="title">{{ title }}</h3>
+      <p class="subtitle">Totale di tutte le provenienze</p>
+
+      <app-chart
+        [labels]="labels"
+        [type]="type"
+        [dataset]="dataset"
+        [colors]="colors"
+      ></app-chart>
+    </div>
+
+    <div style="overflow: hidden">
+      <div class="lineTotal">
+        <p style="font-size: 32px; font-weight: 700; color: #454d56e8">
+          {{ total }}
+        </p>
+        <span class="fa-solid fa-circle-info info"></span>
+      </div>
+      <p
+        style="
+          font-size: small;
+          font-weight: 500;
+          /* padding-bottom: 8px; */
+          color: #454d56;
+        "
+      >
+        Totali {{ title }}
+      </p>
+
+      <div class="scroll">
+        <div class="card" *ngFor="let data of combinedData">
+          <app-card
+            [colore]="data.color"
+            [label]="data.label"
+            [valore]="data.valore"
+          ></app-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
