@@ -6,7 +6,8 @@ import { ChartComponent } from './components/chart/chart.component';
 import { CardComponent } from './components/card/card.component';
 import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-chart.component';
 import { StackedBarChartComponent } from './components/stacked-bar-chart/stacked-bar-chart.component';
-import { SirioTableComponent } from './components/sirio-table/sirio-table.component';
+import { PrimeTableComponent } from './components/prime-table/prime-table.component';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -15,9 +16,9 @@ import { SirioTableComponent } from './components/sirio-table/sirio-table.compon
     CardComponent,
     DoughnutChartComponent,
     StackedBarChartComponent,
-    SirioTableComponent,
+    PrimeTableComponent,
   ],
-  imports: [BrowserModule, ChartModule],
+  imports: [BrowserModule, ChartModule, TableModule],
   providers: [],
   bootstrap: [AppComponent],
 })
